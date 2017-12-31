@@ -139,10 +139,13 @@
 		});
 
 		$('button.comment-button').on('click', function (e) { // button.comment-button
-			var uniqueId = $(this).parents('.wrapper').data('z');
+	              //var uniqueId = $(this).parents('.wrapper').data('z');
+			var casesFormEditUrl = $(this).parents('.wrapper').data('r');
+			console.log("casesFormEditUrl = "+contactsFormUrl);
 
 			// Add prefill information to the source
-			var src = atjs.commentUrl + '?' + atjs.commentPrefill + '=' + uniqueId;
+		      //var src = atjs.commentUrl + '?' + atjs.commentPrefill + '=' + uniqueId;
+			var src = casesFormEditUrl;
 			var iframe = $('<iframe/>', {id:'commentIframe', src:atjs.commentUrl, src:src, height:"100%", width:"100%", frameborder: 0, marginheight:0, text:'Loading…'});
 			$("#commentDialog").append(iframe);
 			$('#commentDialog').dialog("open");
