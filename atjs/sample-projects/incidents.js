@@ -161,7 +161,7 @@
 		atjs.comments.setComment(params.commentUrl, params.commentPrefill);
 		atjs.buttons.newButtonWithEmbeddedForm(form, 'New Case', "Enter a new case");
 		atjs.buttons.makeReloadButton();
-
+                /***
 		atjs.controllers.fixDropdownControllerText('#controlers0', 'Filter by kind');
 		atjs.controllers.fixDropdownControllerText('#controlers2', 'Filter by grade');
 		atjs.controllers.makeControllerLeftmost('#controlers1');
@@ -170,6 +170,7 @@
 		$('#controlers1').find('input')
 			.addClass('studentSearch')
 			.attr('placeholder', "Type to filter by Student");
+		***/
 	};
 
 	atjs.parentUpdate = atjs.update;
