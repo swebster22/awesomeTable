@@ -159,7 +159,7 @@
 		var form = atjs.url.urlPrefillEmbed(params.formUrl, params.prefill);
 
 		atjs.comments.setComment(params.commentUrl, params.commentPrefill);
-		atjs.buttons.newButtonWithEmbeddedForm(form, 'Add New', "Enter a new item");
+		atjs.buttons.newButtonWithEmbeddedForm(form, 'New Case', "Enter a new case");
 		atjs.buttons.makeReloadButton();
 
 		atjs.controllers.fixDropdownControllerText('#controlers0', 'Filter by kind');
